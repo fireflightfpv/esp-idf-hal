@@ -1711,6 +1711,8 @@ mod chip {
     #[cfg(not(feature = "riscv-ulp-hal"))]
     pin!(Gpio19:19, IO, NORTC:0, NOADC:0, NODAC:0, NOTOUCH:0);
     #[cfg(not(feature = "riscv-ulp-hal"))]
+    pin!(Gpio20:20, IO, NORTC:0, NOADC:0, NODAC:0, NOTOUCH:0);
+    #[cfg(not(feature = "riscv-ulp-hal"))]
     pin!(Gpio21:21, IO, NORTC:0, NOADC:0, NODAC:0, NOTOUCH:0);
     #[cfg(not(feature = "riscv-ulp-hal"))]
     pin!(Gpio22:22, IO, NORTC:0, NOADC:0, NODAC:0, NOTOUCH:0);
@@ -1762,6 +1764,8 @@ mod chip {
         pub gpio18: Gpio18,
         #[cfg(not(feature = "riscv-ulp-hal"))]
         pub gpio19: Gpio19,
+        #[cfg(not(feature = "riscv-ulp-hal"))]
+        pub gpio20: Gpio20,
         #[cfg(not(feature = "riscv-ulp-hal"))]
         pub gpio21: Gpio21,
         #[cfg(not(feature = "riscv-ulp-hal"))]
@@ -1821,6 +1825,8 @@ mod chip {
                 gpio18: Gpio18::new(),
                 #[cfg(not(feature = "riscv-ulp-hal"))]
                 gpio19: Gpio19::new(),
+                #[cfg(not(feature = "riscv-ulp-hal"))]
+                gpio20: Gpio20::new(),
                 #[cfg(not(feature = "riscv-ulp-hal"))]
                 gpio21: Gpio21::new(),
                 #[cfg(not(feature = "riscv-ulp-hal"))]
